@@ -1,0 +1,286 @@
+.calorie-tracker {
+  padding-top: 5.5rem;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.calorie-tracker .adobe {
+  position: absolute;
+  top: 0;
+}
+
+.calorie-tracker .adobe img {
+  width: 100%;
+  height: 41vh;
+}
+
+.calorie-tracker .meter-and-calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  float: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calorie-tracker .meter-and-calendar .meter-and-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.calorie-tracker .meter-and-calendar .meter-and-title .calorie-meter {
+  width: 90%;
+  margin-bottom: 0.5rem;
+  height: 3rem;
+}
+
+.calorie-tracker .meter-and-calendar .meter-and-title .meter-numbers {
+  padding-top: 10px;
+}
+
+.calorie-tracker .meter-and-calendar .meter-and-title .red {
+  color: crimson;
+}
+
+.calorie-tracker .meter-and-calendar .meter-and-title .green {
+  color: #3bc528;
+}
+
+.calorie-tracker .meals-container {
+  border-radius: 0.4rem;
+  width: 100vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calorie-tracker .meals-container .meal {
+  width: 23rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3bc528;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.calorie-tracker .meals-container .add-to-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calorie-tracker .meals-container .add-to-container .add-food-button {
+  border: none;
+  padding: 0;
+  margin: 0rem 0.5rem;
+}
+
+.calorie-tracker .meals-container .meal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  height: 13rem;
+  overflow: auto;
+}
+
+.calorie-tracker .meals-container .meal-container .eaten-food-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem 0rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calorie-tracker .meals-container .meal-container .eaten-food-container h4 {
+  font-size: 0.8rem;
+  word-break: break-word;
+  width: 6.5rem;
+}
+
+.calorie-tracker .meals-container .meal-container .eaten-food-container p {
+  font-size: 0.8rem;
+}
+
+.calorie-tracker .meals-container .meal-container .eaten-food-container .delete-eaten-food-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calorie-tracker .chosen-meal {
+  border: #3bc528 solid 2px;
+}
+
+.calorie-tracker .popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calorie-tracker .popup-add-food {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  height: 60%;
+  margin-top: 200px;
+  max-width: 640px;
+  max-height: 500px;
+  background-color: white;
+  color: black;
+  overflow-y: auto;
+  border-radius: 15px;
+}
+
+.calorie-tracker .popup-add-food .popup-close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: black;
+  border: none;
+}
+
+.calorie-tracker .popup-add-food .search-food-input {
+  width: 23rem;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+.calorie-tracker .popup-add-food .search-food-input:focus {
+  outline-color: #3bc528;
+}
+
+.calorie-tracker .popup-add-food .searched-food-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calorie-tracker .popup-add-food .searched-food-list .searched-food-single {
+  border-bottom: solid 1px #ddd;
+  padding: 8px;
+}
+
+.calorie-tracker .popup-add-food .searched-food-list:hover {
+  cursor: pointer;
+}
+
+.calorie-tracker .popup-add-food .pop-up-selected-food {
+  border: #3bc528 solid 2px;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.calorie-tracker .popup-add-food .pop-up-selected-food .add-food-button {
+  border: none;
+  padding: 0;
+  margin: 1rem;
+  color: #3bc528;
+}
+
+.calorie-tracker .popup-add-food .pop-up-selected-food .add-food-button:hover {
+  color: black;
+}
+
+.calorie-tracker .popup-add-food .popup-close-button {
+  position: absolute;
+  border: none;
+  top: 16px;
+  right: 16px;
+}
+
+.calorie-tracker .popup-add-food .fa-fa:hover {
+  color: black;
+}
+
+.calorie-tracker .day-picker > div {
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40rem;
+  font-size: 0.9rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calorie-tracker .day-picker > div button {
+  font-size: 1rem;
+  color: #3bc528;
+}
+
+.calorie-tracker .day-picker > div button:hover {
+  border: none;
+  color: black;
+}
+/*# sourceMappingURL=CaloriesTracker.css.map */

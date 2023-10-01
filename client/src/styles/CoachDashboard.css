@@ -1,0 +1,43 @@
+.coach-dashboard {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+}
+
+.m-flex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.m-flex img {
+  border-radius: 10px;
+  width: 15rem;
+  height: 15rem;
+  /* float: right; */
+  margin-bottom: 1rem;
+}
+.m-flex button {
+  border: none;
+}
+.m-flex .fa-fa {
+  border: none;
+  position: absolute;
+  left: 4rem;
+  bottom: 0.5rem;
+}
+.m-flex input {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.5rem;
+  width: 12rem;
+}
+.chat-list-item a {
+  color: black;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  line-height: 2.5;
+}
+.chat-list-item .fa-fa {
+  margin-right: 1rem;
+}

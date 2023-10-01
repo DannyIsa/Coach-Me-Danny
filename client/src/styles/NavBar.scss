@@ -1,0 +1,446 @@
+#logo {
+  padding-left: 25px;
+  width: 12rem;
+  height: 4rem;
+}
+
+.bb:hover {
+  // color: white;
+  color: #333;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  transition-property: border;
+  // border-bottom: 4px solid white;
+  border-bottom: 4px solid #333;
+}
+.bb {
+  color: white;
+}
+
+.homeNav {
+  z-index: 1;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  // background: rgba(0, 0, 0, 0.1);
+  // background: rgb(0 0 0 / 15%);
+  // background: rgba(0, 0, 0, 0.7);
+
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-options-main {
+    position: absolute;
+    right: 12rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 40px;
+    list-style-type: none;
+  }
+
+  .mobile-option {
+    display: none;
+  }
+
+  .signIn {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    padding: 0px 5px;
+    list-style-type: none;
+  }
+  .sign-in {
+    padding-right: 50px;
+    align-self: center;
+    &:hover {
+      color: rgb(59, 59, 226);
+    }
+  }
+
+  & .signIn-btnB {
+    padding: 10px 10px;
+    border-radius: 3px;
+    // background: #535a3e;
+    background-color: #333;
+    // background: #0d7e65;
+    color: white;
+    // color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+      color: #333;
+      background-color: whitesmoke;
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  .box {
+    width: 400px;
+    height: 0rem;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: absolute;
+    overflow-y: auto;
+    padding: 0px;
+    left: -300px;
+    margin-top: 5px;
+    background-color: #f4f4f4;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 2;
+
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+
+    & a:visited {
+      color: black;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: black;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+  }
+
+  .notification {
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+
+    .tags {
+      display: flex;
+      // justify-content: space-around;
+      flex-wrap: wrap;
+
+      .tag {
+        white-space: nowrap;
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin: 0.25rem;
+        color: white;
+        background-color: plum;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .Yoga {
+        background-color: rgb(151, 99, 209);
+      }
+
+      .Pilates {
+        background-color: lightblue;
+      }
+
+      .PowerLifting {
+        background-color: lightgreen;
+      }
+
+      .WeightLifting {
+        background-color: rgb(85, 185, 177);
+      }
+      .Crossfit {
+        background-color: rgb(29, 195, 145);
+      }
+      .Other {
+        background-color: rgb(255, 127, 244);
+      }
+
+      .all {
+        background-color: grey;
+      }
+    }
+    .trainees-item .coach-card-btn {
+      .requests-btn {
+        color: white;
+        border: 1px solid #5995fd;
+        background-color: #5995fd;
+        padding: 0.5rem 1.5rem;
+        border-radius: 5px;
+      }
+      & .chat-btn {
+        background-color: white;
+        color: #5995fd;
+        border: 1px solid #5995fd;
+        padding: 0.5rem 1.5rem;
+        border-radius: 5px;
+        text-transform: none;
+        // font-size: 10px;
+        &:hover {
+          background-color: #5995fd;
+          color: white;
+        }
+      }
+
+      .fa-fa :hover {
+        color: #ffc719;
+      }
+    }
+    .trainees-item .coach-card-btn .chat-btn {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .number {
+    height: fit-content;
+    width: fit-content;
+    background-color: #d63031;
+    border-radius: 20px;
+    color: white;
+    padding: 0rem 0.3rem;
+    text-align: center;
+    position: absolute;
+    top: -0.2rem;
+    left: 13px;
+    border-style: solid;
+    border-width: 2px;
+
+    .requests-alert {
+      font-size: 1rem;
+    }
+  }
+
+  .number:empty {
+    display: none;
+  }
+
+  .notBtn {
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover > .box {
+      height: 50vh;
+    }
+  }
+
+  .display {
+    position: relative;
+
+    .cont {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      // background-color: #4e0d0d;
+      background-color: #f4f4f4;
+
+      &:empty {
+        display: none;
+      }
+      // .fa-fa {
+      //   border: 2px solid transparent;
+      //   &:hover {
+      //     color: #ffc719;
+      //   }
+      // }
+    }
+    & .cent {
+      text-align: center;
+      display: block;
+      color: black;
+    }
+  }
+
+  .sec,
+  .trainee-sec {
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: white;
+    transition: 0.5s;
+    height: 11.8rem;
+    display: flex;
+
+    & p {
+      font-size: 1.2rem;
+      // color: pink;
+    }
+
+    .coach-card-image,
+    .trainee-card-image {
+      border-radius: 10px;
+      width: 7rem;
+      height: 10.6rem;
+      float: left;
+      margin-right: 1rem;
+    }
+
+    .coach-card-con {
+      height: 10rem;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      // background-color: #0d7e65;
+      width: 15rem;
+
+      .coach-card-details,
+      .trainee-card-details {
+        // width: 8rem;
+        width: 14rem;
+        word-wrap: break-word;
+        display: flex;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        /* background-color: blue; */
+        justify-content: space-between;
+        background: #f2f5f8 !important;
+        border-radius: 5px;
+        color: #000 !important;
+
+        & p {
+          font-size: 10px;
+          color: #a1aab9;
+          display: flex;
+          flex-direction: column;
+          height: 2.2rem;
+          overflow-y: auto;
+        }
+
+        & span {
+          font-size: 1rem;
+          font-weight: 500;
+          color: black;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: #bfbfbf;
+    }
+  }
+
+  .txt {
+    // vertical-align: top;
+    font-size: 1.5rem;
+    // padding: 5px 10px 0px 10px;
+  }
+
+  .trainees-item {
+    // color: rgb(224, 58, 58);
+    color: #5995fd;
+
+    .date-requests {
+      font-size: 0.8rem;
+      color: grey;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .sub {
+    font-size: 1rem;
+    color: grey;
+  }
+}
+
+//////////////////////////////////
+
+@media (max-width: 1200px) {
+  .header {
+    height: 60px;
+  }
+
+  .nav-options-main {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+
+    &.active {
+      background: #9899d1;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      align-content: center;
+      padding-left: 0px;
+    }
+  }
+
+  .menu-icon-main {
+    width: 45px;
+    height: 45px;
+    color: white;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+
+  .link:hover {
+    color: #ffc719;
+    border-bottom: none;
+  }
+
+  .signIn-btnB {
+    display: none;
+  }
+
+  .homeNav {
+    .mobile-menu {
+      display: block;
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+
+      .sign-in {
+        border-radius: 3px;
+        color: white;
+        background: #0d7e65;
+        padding: 10px 30px;
+        align-self: center;
+        border-radius: 3px;
+      }
+    }
+    .mobile-option {
+      display: block;
+      text-align: center;
+    }
+    .box {
+      left: -150px;
+    }
+  }
+}

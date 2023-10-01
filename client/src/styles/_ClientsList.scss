@@ -1,0 +1,119 @@
+.client-list-start {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  align-items: center;
+  // flex-wrap: wrap;
+  overflow: scroll;
+
+  & h1 {
+    margin-bottom: 3rem;
+    font-weight: lighter;
+    font-size: 2.8em;
+  }
+  .ticket-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .ticket {
+      display: flex;
+      position: relative;
+      align-items: center;
+      flex-direction: column;
+      width: fit-content;
+      padding: 0.5rem 2rem;
+      border-radius: 0.4rem;
+      margin: 1rem;
+      // background-color: #3580d4;
+      // background-color: #1456a1;
+      background-color: white;
+      box-shadow: 5px 8px 11px 6px #c0c0c0;
+      .fa-fa:hover {
+        color: black;
+      }
+
+      .ticket-content,
+      .ticket-title {
+        width: 20rem;
+        word-wrap: break-word;
+      }
+
+      .ticket-title {
+        padding: 1rem 0 0 0;
+        font-size: 1.5em;
+      }
+
+      .ticket-content {
+        font-size: 1.2em;
+
+        .chat-client-btn {
+          float: right;
+          border: none;
+          padding: 0;
+        }
+      }
+
+      .ticket-header .view-calender {
+        font-size: 2rem;
+        opacity: 0;
+      }
+      &:hover .ticket-header .view-calender {
+        opacity: 1;
+      }
+
+      .ticket-header .show-logs-btn {
+        font-size: 1.2rem;
+        position: absolute;
+        top: 0;
+        right: 14.5rem;
+        opacity: 0;
+        border: none;
+      }
+      &:hover .ticket-header .show-logs-btn {
+        opacity: 1;
+      }
+      &:hover .ticket-header span {
+        opacity: 1;
+        float: right;
+        margin-top: 0.7rem;
+      }
+
+      .ticket-header span {
+        white-space: nowrap;
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-bottom: 0.2rem;
+        opacity: 0;
+      }
+
+      .Sedentary {
+        // background-color: gray;
+        background-color: rgb(255, 127, 244);
+      }
+
+      .LightlyActive {
+        background-color: lightblue;
+      }
+
+      .Active {
+        background-color: lightgreen;
+      }
+
+      .VeryActive {
+        background-color: rgb(255, 127, 127);
+      }
+    }
+  }
+  .popup-close {
+    border: none;
+    float: right;
+    color: #acacac;
+    &:hover {
+      color: black;
+    }
+  }
+}

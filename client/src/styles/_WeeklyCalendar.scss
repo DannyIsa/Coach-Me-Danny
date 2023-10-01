@@ -1,0 +1,93 @@
+.weekly-calendar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  background-color: #ecedef;
+
+  .table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 95%;
+    width: 95%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    box-shadow: 5px 8px 11px 6px #c0c0c0;
+  }
+
+  .table td {
+    border: 2px white solid;
+    width: 12.5%;
+    height: 16.6%;
+    color: rgb(77, 75, 75);
+    word-wrap: break-all;
+  }
+
+  .table-one-container {
+    width: auto;
+    height: 100%;
+    word-wrap: break-all;
+  }
+
+  .day-title {
+    font-size: 2rem;
+    background-color: rgb(46, 112, 187);
+    color: white;
+  }
+
+  .container-title {
+    font-size: 1.1rem;
+    margin-top: 0;
+  }
+
+  .popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .popup-workout {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    height: 50%;
+    margin-top: 200px;
+    max-width: 640px;
+    max-height: 400px;
+    background-color: white;
+    color: black;
+    overflow-y: auto;
+    border-radius: 15px;
+  }
+
+  .done-header {
+    color: #ffc719;
+    font-size: 2rem;
+  }
+
+  .popup-workout .popup-start-button {
+    color: #acacac;
+  }
+
+  .popup-workout .popup-start-button:hover,
+  .s-fa:hover {
+    color: #ffc719;
+  }
+  .popup-workout .popup-close-button {
+    position: absolute;
+    border: none;
+    top: 16px;
+    right: 16px;
+  }
+
+  .popup-workout .fa-fa:hover {
+    color: black;
+  }
+}

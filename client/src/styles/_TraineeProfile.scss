@@ -1,0 +1,228 @@
+.profile-container {
+  height: 100%;
+  display: flex;
+  padding-top: 6rem;
+  justify-content: center;
+
+  .main-body {
+    padding: 15px;
+    display: flex;
+
+    .pop-up-leave {
+      position: relative;
+      padding-bottom: 32px;
+      width: 100%;
+      height: 25%;
+      max-width: 640px;
+      max-height: 300px;
+      background-color: white;
+      color: black;
+      border-radius: 15px;
+
+      & h1 {
+        color: black;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: #1456a1;
+      }
+
+      & h2,
+      h3 {
+        margin: 1rem 0rem;
+      }
+
+      & button {
+        margin-top: 0.5rem;
+        color: black;
+        border: solid 1px;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+    .main1 {
+      padding: 15px 40px;
+
+      .card {
+        // background-color: #1456a1;
+        background-color: white;
+        box-shadow: 5px 8px 11px 6px #c0c0c0;
+        width: 20rem;
+        border: 2px solid rgb(46, 112, 187);
+      }
+      .d-flex {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+      }
+    }
+    .main2 {
+      padding: 15px;
+      .card {
+        // background-color: #1456a1;
+        border: 2px solid rgb(46, 112, 187);
+        background-color: white;
+        box-shadow: 5px 8px 11px 6px #c0c0c0;
+        width: 40rem;
+        padding-bottom: 0.4rem;
+        .next-workout {
+          height: 23.5rem;
+        }
+      }
+      .edit-button {
+        float: right;
+        color: #333;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 0.5rem;
+
+        &:hover {
+          color: white;
+          background-color: #333;
+          border: 1px solid #333;
+        }
+      }
+      .forms {
+        height: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        & div {
+          font-size: 1.3rem;
+        }
+        .pdf-btn {
+          font-size: 1.2rem;
+          margin-left: 0.3rem;
+        }
+      }
+    }
+    .card {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 23rem;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0 solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+
+      .card-body {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1rem;
+
+        .row {
+          margin-top: 1.5rem;
+        }
+
+        .d-flex {
+          & img {
+            border-radius: 10px;
+            width: 15rem;
+            height: 15rem;
+            float: right;
+            margin-bottom: 1.5rem;
+          }
+          & button {
+            border: none;
+          }
+          & .fa-fa {
+            border: none;
+            position: absolute;
+            left: 4rem;
+            bottom: 0.5rem;
+            // float: right;
+          }
+
+          & input {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 1.5rem;
+            width: 12rem;
+          }
+        }
+      }
+    }
+
+    .mb-3,
+    .my-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .h-100 {
+      height: 100% !important;
+    }
+
+    .coach-info {
+      &.coach {
+        overflow-y: auto;
+      }
+      flex: 1 1 auto;
+      min-height: 1px;
+      height: 23.6rem;
+      padding: 1rem;
+      &.coach {
+        height: 41.8rem;
+      }
+      & h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      & p {
+        font-weight: bold;
+        line-height: 2;
+
+        & span {
+          font-weight: lighter;
+        }
+      }
+      .profile-image {
+        border-radius: 10px;
+        width: 15rem;
+        height: 17rem;
+        float: right;
+      }
+      .coach-control-btn {
+        float: right;
+
+        & .chat-btn {
+          color: white;
+          border: 1px solid #5995fd;
+          background-color: #5995fd;
+          padding: 0.25rem 1rem;
+          border-radius: 5px;
+          text-transform: none;
+        }
+
+        & .leave-btn {
+          background-color: white;
+          color: #5995fd;
+          border: 1px solid #5995fd;
+          padding: 0.5rem 1.5rem;
+          border-radius: 5px;
+          text-transform: none;
+          // font-size: 10px;
+
+          &:hover {
+            background-color: #5995fd;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

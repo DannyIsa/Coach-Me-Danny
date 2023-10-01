@@ -1,0 +1,504 @@
+#logo {
+  padding-left: 25px;
+  width: 12rem;
+  height: 4rem;
+}
+
+.bb:hover {
+  color: #333;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: border;
+  transition-property: border;
+  border-bottom: 4px solid #333;
+}
+
+.bb {
+  color: white;
+}
+
+.homeNav {
+  z-index: 1;
+  height: 77px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.homeNav .logo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.homeNav .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homeNav .nav-options-main {
+  position: absolute;
+  right: 12rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  grid-gap: 40px;
+  list-style-type: none;
+}
+
+.homeNav .mobile-option {
+  display: none;
+}
+
+.homeNav .signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  padding: 0px 5px;
+  list-style-type: none;
+}
+
+.homeNav .sign-in {
+  padding-right: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.homeNav .sign-in:hover {
+  color: #3b3be2;
+}
+
+.homeNav .signIn-btnB {
+  padding: 10px 10px;
+  border-radius: 3px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeNav .signIn-btnB:hover {
+  color: #333;
+  background-color: whitesmoke;
+}
+
+.homeNav .mobile-menu {
+  display: none;
+}
+
+.homeNav .box {
+  width: 400px;
+  height: 0rem;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  overflow-y: auto;
+  padding: 0px;
+  left: -300px;
+  margin-top: 5px;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.homeNav .box a {
+  text-decoration: none;
+  color: black;
+}
+
+.homeNav .box a:visited {
+  color: black;
+}
+
+.homeNav .box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.homeNav .box::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.homeNav .box::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.homeNav .notification {
+  color: black;
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.homeNav .notification .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.homeNav .notification .tags .tag {
+  white-space: nowrap;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 0.25rem;
+  color: white;
+  background-color: plum;
+}
+
+.homeNav .notification .tags .tag:hover {
+  cursor: pointer;
+}
+
+.homeNav .notification .tags .Yoga {
+  background-color: #9763d1;
+}
+
+.homeNav .notification .tags .Pilates {
+  background-color: lightblue;
+}
+
+.homeNav .notification .tags .PowerLifting {
+  background-color: lightgreen;
+}
+
+.homeNav .notification .tags .WeightLifting {
+  background-color: #55b9b1;
+}
+
+.homeNav .notification .tags .Crossfit {
+  background-color: #1dc391;
+}
+
+.homeNav .notification .tags .Other {
+  background-color: #ff7ff4;
+}
+
+.homeNav .notification .tags .all {
+  background-color: grey;
+}
+
+.homeNav .notification .trainees-item .coach-card-btn .requests-btn {
+  color: white;
+  border: 1px solid #5995fd;
+  background-color: #5995fd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+.homeNav .notification .trainees-item .coach-card-btn .chat-btn {
+  background-color: white;
+  color: #5995fd;
+  border: 1px solid #5995fd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-transform: none;
+}
+
+.homeNav .notification .trainees-item .coach-card-btn .chat-btn:hover {
+  background-color: #5995fd;
+  color: white;
+}
+
+.homeNav .notification .trainees-item .coach-card-btn .fa-fa :hover {
+  color: #ffc719;
+}
+
+.homeNav .notification .trainees-item .coach-card-btn .chat-btn {
+  padding: 0.5rem 1rem;
+}
+
+.homeNav .number {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #d63031;
+  border-radius: 20px;
+  color: white;
+  padding: 0rem 0.3rem;
+  text-align: center;
+  position: absolute;
+  top: -0.2rem;
+  left: 13px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.homeNav .number .requests-alert {
+  font-size: 1rem;
+}
+
+.homeNav .number:empty {
+  display: none;
+}
+
+.homeNav .notBtn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.homeNav .notBtn:hover > .box {
+  height: 50vh;
+}
+
+.homeNav .display {
+  position: relative;
+}
+
+.homeNav .display .cont {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.homeNav .display .cont:empty {
+  display: none;
+}
+
+.homeNav .display .cent {
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+.homeNav .sec,
+.homeNav .trainee-sec {
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 11.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeNav .sec p,
+.homeNav .trainee-sec p {
+  font-size: 1.2rem;
+}
+
+.homeNav .sec .coach-card-image,
+.homeNav .sec .trainee-card-image,
+.homeNav .trainee-sec .coach-card-image,
+.homeNav .trainee-sec .trainee-card-image {
+  border-radius: 10px;
+  width: 7rem;
+  height: 10.6rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.homeNav .sec .coach-card-con,
+.homeNav .trainee-sec .coach-card-con {
+  height: 10rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 15rem;
+}
+
+.homeNav .sec .coach-card-con .coach-card-details,
+.homeNav .sec .coach-card-con .trainee-card-details,
+.homeNav .trainee-sec .coach-card-con .coach-card-details,
+.homeNav .trainee-sec .coach-card-con .trainee-card-details {
+  width: 14rem;
+  word-wrap: break-word;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  /* background-color: blue; */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f2f5f8 !important;
+  border-radius: 5px;
+  color: #000 !important;
+}
+
+.homeNav .sec .coach-card-con .coach-card-details p,
+.homeNav .sec .coach-card-con .trainee-card-details p,
+.homeNav .trainee-sec .coach-card-con .coach-card-details p,
+.homeNav .trainee-sec .coach-card-con .trainee-card-details p {
+  font-size: 10px;
+  color: #a1aab9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 2.2rem;
+  overflow-y: auto;
+}
+
+.homeNav .sec .coach-card-con .coach-card-details span,
+.homeNav .sec .coach-card-con .trainee-card-details span,
+.homeNav .trainee-sec .coach-card-con .coach-card-details span,
+.homeNav .trainee-sec .coach-card-con .trainee-card-details span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.homeNav .sec:hover,
+.homeNav .trainee-sec:hover {
+  background-color: #bfbfbf;
+}
+
+.homeNav .txt {
+  font-size: 1.5rem;
+}
+
+.homeNav .trainees-item {
+  color: #5995fd;
+}
+
+.homeNav .trainees-item .date-requests {
+  font-size: 0.8rem;
+  color: grey;
+  margin-bottom: 0.3rem;
+}
+
+.homeNav .sub {
+  font-size: 1rem;
+  color: grey;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 60px;
+  }
+  .nav-options-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .nav-options-main.active {
+    background: #9899d1;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-left: 0px;
+  }
+  .menu-icon-main {
+    width: 45px;
+    height: 45px;
+    color: white;
+  }
+  .option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+  .link:hover {
+    color: #ffc719;
+    border-bottom: none;
+  }
+  .signIn-btnB {
+    display: none;
+  }
+  .homeNav .mobile-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+  }
+  .homeNav .mobile-menu .sign-in {
+    border-radius: 3px;
+    color: white;
+    background: #0d7e65;
+    padding: 10px 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    border-radius: 3px;
+  }
+  .homeNav .mobile-option {
+    display: block;
+    text-align: center;
+  }
+  .homeNav .box {
+    left: -150px;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */

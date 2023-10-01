@@ -1,0 +1,307 @@
+.create-workout-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5.8rem;
+  overflow: auto;
+  align-items: center;
+  background-color: #ecedef;
+
+  & h1 {
+    // font-family: "Futura PT W02 Book", Futura, "Trebuchet MS", Arial, sans-serif;
+    // text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 1rem;
+    // margin-bottom: 3rem;
+    font-weight: lighter;
+    font-size: 2.8em;
+  }
+
+  .search-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    .search {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      width: 14rem;
+
+      & input {
+        width: 14rem;
+        font-size: 1.2rem;
+        padding: 0.3rem 1rem;
+        box-sizing: border-box;
+        background-color: #333;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        color: white;
+      }
+    }
+
+    & .tags {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 9rem;
+
+      .tag {
+        white-space: nowrap;
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.2rem;
+        background-color: plum;
+        // opacity: 0;
+        &:hover {
+          font-size: 0.9rem;
+          cursor: pointer;
+          // border: solid 2px #ffc719;
+        }
+      }
+
+      .Arms {
+        background-color: rgb(151, 99, 209);
+      }
+
+      .Core {
+        background-color: lightblue;
+      }
+
+      .Back {
+        background-color: lightgreen;
+      }
+
+      .Legs {
+        background-color: rgb(85, 185, 177);
+      }
+      .Weight {
+        background-color: rgb(29, 195, 145);
+      }
+      .Machine {
+        background-color: rgb(255, 127, 244);
+      }
+      .Cardio {
+        background-color: rgb(127, 229, 255);
+      }
+      .Laps {
+        background-color: rgb(228, 201, 84);
+      }
+      .Plyo {
+        background-color: grey;
+      }
+    }
+    .add {
+      color: #333;
+      border: 1px solid #333;
+      border-radius: 5px;
+      padding: 0.5rem;
+
+      &:hover {
+        color: white;
+        background-color: #333;
+        border: 1px solid #333;
+      }
+    }
+  }
+
+  .exercises-container {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    justify-content: space-around;
+    flex-direction: row;
+
+    .exercises-left {
+      width: 30rem;
+      height: 35rem;
+      overflow: auto;
+
+      display: flex;
+      flex-wrap: wrap;
+      cursor: grab;
+      // justify-content: space-around;
+      // background-color: #1456a1;
+      background-color: white;
+      box-shadow: 5px 8px 11px 6px #c0c0c0;
+      border-radius: 0.4rem;
+
+      .exercise-block {
+        // display: flex;
+        // position: relative;
+        // align-items: center;
+        // flex-direction: column;
+        // justify-content: space-around;
+        // width: 25rem;
+        padding: 0.5rem;
+        // font-weight: lighter;
+        // border-radius: 0.4rem;
+        // margin-bottom: 2rem;
+        // background-color: #5995fd;
+
+        & p {
+          font-weight: lighter;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .exercise-middle {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30rem;
+      height: 35rem;
+      padding: 0.5rem 2rem 2rem;
+      border-radius: 0.4rem;
+      // background-color: #1456a1;
+      background-color: white;
+      box-shadow: 5px 8px 11px 6px #c0c0c0;
+      cursor: no-drop;
+      overflow: auto;
+
+      & p {
+        font-size: 1.3rem;
+      }
+
+      .exercise-name {
+        text-align: center;
+        width: 20rem;
+        word-wrap: break-word;
+        font-size: 1.5em;
+        align-self: center;
+      }
+      .exercise-image {
+        width: 20rem;
+        height: 20rem;
+        align-self: center;
+      }
+      .exercise-category {
+        width: 90%;
+        flex-wrap: wrap;
+      }
+      .tag {
+        white-space: nowrap;
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-right: 0.2rem;
+        margin-bottom: 0.2rem;
+        background-color: plum;
+        &:hover {
+          font-size: 0.8rem;
+        }
+      }
+
+      .Arms {
+        background-color: rgb(151, 99, 209);
+      }
+
+      .Core {
+        background-color: lightblue;
+      }
+
+      .Back {
+        background-color: lightgreen;
+      }
+
+      .Legs {
+        background-color: rgb(85, 185, 177);
+      }
+      .Weight {
+        background-color: rgb(29, 195, 145);
+      }
+      .Machine {
+        background-color: rgb(255, 127, 244);
+      }
+      .Cardio {
+        background-color: rgb(127, 229, 255);
+      }
+      .Laps {
+        background-color: rgb(228, 201, 84);
+      }
+      .Plyo {
+        background-color: grey;
+      }
+      .exercise-equipment {
+        width: 90%;
+        flex-wrap: wrap;
+      }
+      .exercise-description {
+        width: 20rem;
+        word-wrap: break-word;
+        font-size: 1.2em;
+      }
+    }
+    .exercise-right {
+      // background-color: #1456a1;
+      background-color: white;
+      box-shadow: 5px 8px 11px 6px #c0c0c0;
+      width: 30rem;
+      height: 35rem;
+      // overflow: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      border-radius: 0.4rem;
+
+      & h1 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem;
+      }
+      & p {
+        font-size: 1.3rem;
+        margin: 13rem 0rem;
+      }
+      .chosen-exercise {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: auto;
+        width: 25rem;
+
+        & button {
+          padding: 0.2rem 0.5rem;
+          margin: 0;
+          margin-bottom: 0.5rem;
+          border: 1px solid #333;
+
+          &:hover {
+            background-color: #333;
+            border: 1px solid #333;
+
+            & .close-fa {
+              color: white;
+            }
+          }
+        }
+      }
+      .next-button {
+        padding: 0.3rem 0rem;
+        width: 6rem;
+        margin: 0;
+        position: absolute;
+        bottom: 2rem;
+        color: #333;
+        border: 1px solid #333;
+        border-radius: 5px;
+
+        &:hover {
+          color: white;
+          background-color: #333;
+          border: 1px solid #333;
+        }
+      }
+    }
+  }
+}
