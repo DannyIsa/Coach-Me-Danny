@@ -38,9 +38,9 @@ We used the new technologies we learned to design a website that greatly facilit
   ![](./ReadMe-pics/HomePage_and_Register.gif)
 - ### Dashboard with all essential data displayed in graphs
   ![](./ReadMe-pics/dashboard.png)
-- ### Meal/Calorie tracker
+- ### Meal / Calorie tracker
   ![](./ReadMe-pics/Calorie-Tracker.gif)
-- ### Search and add a coach to friends list
+- ### Search and add a coach
   ![](./ReadMe-pics/add_coach.png)
 - ### Live Chat
   ![](./ReadMe-pics/Live_Chat.png)
