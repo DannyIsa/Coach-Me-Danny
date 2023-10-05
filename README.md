@@ -7,7 +7,7 @@
 ## About
 
 For our final project in Cyber4s course, we chose to unite our two passions: sports and our newfound interest, coding. Once we determined that our project would focus on fitness, we discussed our training routines and the apps/websites we use. During conversations with fitness trainers, we learned that they manage all their activities through WhatsApp and Excel files.
-We used the new technologies we learned to design a website that greatly facilitates communication between trainees and coaches.
+We used the new technologies we learned to design a website that greatly facilitates communication between trainees and coaches.  
 [Original repository](https://github.com/DannyIsa/Coach-Me).
 
 ## Features
